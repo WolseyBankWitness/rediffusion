@@ -2,7 +2,7 @@ name: Serverless PR
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 env:
   DISTRIBUTOR_ROOT: ""
