@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  DISTRIBUTOR_ROOT: "/"
+  DISTRIBUTOR_ROOT: ""
 
 jobs:
   combine_witness_sigs:
@@ -21,7 +21,7 @@ jobs:
       uses: google/trillian-examples/serverless/deploy/github/distributor/combine_witness_signatures@HEAD
       with:
           distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
-          config: '${{ env.DISTRIBUTOR_ROOT }}/config.yaml'
+          config: '${{ env.DISTRIBUTOR_ROOT }}config.yaml'
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_user_name: Serverless Bot
