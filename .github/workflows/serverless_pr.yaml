@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  DISTRIBUTOR_ROOT: ""
+  DISTRIBUTOR_ROOT: "/"
 
 jobs:
   changes:
@@ -22,9 +22,9 @@ jobs:
           list-files: shell
           filters: |
             distributor_incoming:
-              - added: '${{ env.DISTRIBUTOR_ROOT }}/logs/*/incoming/*'
+              - added: '${{ env.DISTRIBUTOR_ROOT }}logs/*/incoming/*'
             distributor_private:
-              - '${{ env.DISTRIBUTOR_ROOT }}!(/logs/*/incoming/*)'
+              - '${{ env.DISTRIBUTOR_ROOT }}!(logs/*/incoming/*)'
       - name: Detect distributor structure changes
         if: steps.filter.outputs.distributor_private == 'true'
         run: |
