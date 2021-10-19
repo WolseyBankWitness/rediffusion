@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - master
+  workflow_run:
+    workflows: ["Automerge PR"]
+  workflow_dispatch:
+
+jobs:
+  combine_witness_sigs:
+    runs-on: ubuntu-latest
+    name: Combine witness signatures
+    steps:
+    - uses: actions/checkout@v2
+    # Attempt to combine witness signatures with the log checkpoint.
+    - name: Combine witness signatures
+      id: combine_witness_signatures
+      uses: google/trillian-examples/serverless/deploy/github/distributor/combine_witness_signatures@HEAD
+      with:
+          distributor_dir: './distributor'
+          config: './distributor/config.yaml'
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_user_name: Serverless Bot
+        commit_user_email: actions@github.com
+        commit_author: Serverless Bot <actions@github.com>
+        commit_message: Automatically merge witness signatures
