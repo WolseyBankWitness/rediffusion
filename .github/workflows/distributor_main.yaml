@@ -6,6 +6,9 @@ on:
     workflows: ["Automerge PR"]
   workflow_dispatch:
 
+env:
+  DISTRIBUTOR_ROOT: "/"
+
 jobs:
   combine_witness_sigs:
     runs-on: ubuntu-latest
@@ -17,11 +20,13 @@ jobs:
       id: combine_witness_signatures
       uses: google/trillian-examples/serverless/deploy/github/distributor/combine_witness_signatures@HEAD
       with:
-          distributor_dir: './distributor'
-          config: './distributor/config.yaml'
+          distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
+          config: '${{ env.DISTRIBUTOR_ROOT }}/config.yaml'
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_user_name: Serverless Bot
         commit_user_email: actions@github.com
         commit_author: Serverless Bot <actions@github.com>
         commit_message: Automatically merge witness signatures
+
+

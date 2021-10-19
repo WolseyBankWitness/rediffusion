@@ -22,9 +22,9 @@ jobs:
           list-files: shell
           filters: |
             distributor_incoming:
-              - added: '${{ env.DISTRIBUTOR_ROOT }}/logs/*/incoming/*'
+              - added: '${{ env.DISTRIBUTOR_ROOT }}logs/*/incoming/*'
             distributor_private:
-              - '${{ env.DISTRIBUTOR_ROOT }}!(/logs/*/incoming/*)'
+              - '${{ env.DISTRIBUTOR_ROOT }}!(logs/*/incoming/*)'
       - name: Detect distributor structure changes
         if: steps.filter.outputs.distributor_private == 'true'
         run: |
@@ -49,7 +49,7 @@ jobs:
         uses: google/trillian-examples/serverless/deploy/github/distributor/combine_witness_signatures@HEAD
         with:
             distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
-            config: './${{ env.DISTRIBUTOR_ROOT }}/config.yaml'
+            config: '${{ env.DISTRIBUTOR_ROOT }}config.yaml'
             dry_run: true
       # Store PR number so we can update from a more priviledged workflow.
       - id: save_metadata
