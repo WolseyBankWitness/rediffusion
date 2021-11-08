@@ -18,4 +18,3 @@ Logs:
   - Origin: Rekor
     PublicKeyType: sigstore_ecdsa
     PublicKey: rekor.sigstore.dev MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2G2Y+2tabdTV5BcGiBIx0a9fAFwrkBbmLSGtks4L3qX6yYY0zufBnhC8Ur/iy55GhWP/9A/bY2LhC30M9+RYtw==
-    URL: https://rekor.sigstore.dev
