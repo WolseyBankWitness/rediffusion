@@ -15,4 +15,7 @@ Logs:
     PublicKey: armory-drive-log+16541b8f+AYDPmG5pQp4Bgu0a1mr5uDZ196+t8lIVIfWQSPWmP+Jv
   - Origin: go.sum database tree
     PublicKey: sum.golang.org+033de0ae+Ac4zctda0e5eza+HJyk9SxEdh+s3Ux18htTTAD8OuAn8
-
+  - Origin: Rekor
+    PublicKeyType: sigstore_ecdsa
+    PublicKey: rekor.sigstore.dev MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2G2Y+2tabdTV5BcGiBIx0a9fAFwrkBbmLSGtks4L3qX6yYY0zufBnhC8Ur/iy55GhWP/9A/bY2LhC30M9+RYtw==
+    URL: https://rekor.sigstore.dev
