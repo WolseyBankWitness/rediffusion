@@ -9,12 +9,19 @@ Witnesses:
 Logs:
   - Origin: github.com/AlCutter/serverless-test/log
     PublicKey: github.com/AlCutter/serverless-test/log+28035191+AVtQ/9lW+g90rQY3+pODJvMQ8X/tTvh/EuvCDLSmUk4S
+# F-Secure logs
   - Origin: Armory Drive Prod 1
     PublicKey: armory-drive-log+10146603+Af48wFx6DzAklbp4iZaMFGXoEBZxUwEMQMID4lovBq6X
   - Origin: Armory Drive Prod 2
     PublicKey: armory-drive-log+16541b8f+AYDPmG5pQp4Bgu0a1mr5uDZ196+t8lIVIfWQSPWmP+Jv
+# Golang's sum DB:
   - Origin: go.sum database tree
     PublicKey: sum.golang.org+033de0ae+Ac4zctda0e5eza+HJyk9SxEdh+s3Ux18htTTAD8OuAn8
+# SigStore/Rekor log:
   - Origin: Rekor
-    PublicKeyType: sigstore_ecdsa
-    PublicKey: rekor.sigstore.dev MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2G2Y+2tabdTV5BcGiBIx0a9fAFwrkBbmLSGtks4L3qX6yYY0zufBnhC8Ur/iy55GhWP/9A/bY2LhC30M9+RYtw==
+    PublicKeyType: ecdsa
+    PublicKey: rekor.sigstore.dev+c0d23d6a+AjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABNhtmPtrWm3U1eQXBogSMdGvXwBcK5AW5i0hrZLOC96l+smGNM7nwZ4QvFK/4sueRoVj//QP22Ni4Qt9DPfkWLc
+# This next one is the Pixel BT log, it has a broken Origin currently and will need to be fixed.
+  - Origin: DEFAULT
+    PubKeyType: ecdsa
+    PubKey: Pixel-Transparency-Log-2021+72c878db+AjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFPN7lzVIk2BOd3Nk33VpqqVttGwV8uChH+RX/HVfBiypVQFyh8o8Ny6fSdxNMgkSf9/VynrgADBeys0r4Q9uPA=
