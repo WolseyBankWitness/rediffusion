@@ -21,7 +21,16 @@ jobs:
       uses: google/trillian-examples/serverless/deploy/github/distributor/combine_witness_signatures@HEAD
       with:
           distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
-          config: '${{ env.DISTRIBUTOR_ROOT }}config.yaml'
+          config: 'config.yaml'
+    # Update log index.
+    - name: Update logs index
+      id: update_logs_index
+      uses: google/trillian-examples/serverless/deploy/github/distributor/update_logs_index@update_log_index
+      with:
+          distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
+          config: 'config.yaml'
+          output: 'logs/README.md'
+    # Commit any changes back to distributor repo.
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_user_name: Serverless Bot
