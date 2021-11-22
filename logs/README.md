@@ -1,6 +1,6 @@
 # Log index
 
-## Known logs
+## Known Logs
 | Origin | SignedBy |
 |--------|----------|
 | [github.com/AlCutter/serverless-test/log](./48e2ecbc0474292d790906a13023a76a93e0f3706f86f9f939bd91b7dcfde4a6) | github.com/AlCutter/serverless-test/log | 
@@ -11,7 +11,7 @@
 | [DEFAULT](./d0a1f19e973cd5cc3d4f26446ea418d33faefffb43ea1e3eadfe133287f71ff8) | Pixel-Transparency-Log-2021 | 
  
 
-## Known witnesses
+## Known Witnesses
 
 | SignedBy |
 |----------|
