@@ -25,7 +25,7 @@ jobs:
     # Update log index.
     - name: Update logs index
       id: update_logs_index
-      uses: google/trillian-examples/serverless/deploy/github/distributor/update_logs_index@update_log_index
+      uses: AlCutter/trillian-examples/serverless/deploy/github/distributor/update_logs_index@update_log_index
       with:
           distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
           config: 'config.yaml'
