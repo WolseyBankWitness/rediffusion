@@ -10,8 +10,6 @@ Logs:
   - Origin: github.com/AlCutter/serverless-test/log
     PublicKey: github.com/AlCutter/serverless-test/log+28035191+AVtQ/9lW+g90rQY3+pODJvMQ8X/tTvh/EuvCDLSmUk4S
 # F-Secure logs
-  - Origin: Armory Drive Prod 1
-    PublicKey: armory-drive-log+10146603+Af48wFx6DzAklbp4iZaMFGXoEBZxUwEMQMID4lovBq6X
   - Origin: Armory Drive Prod 2
     PublicKey: armory-drive-log+16541b8f+AYDPmG5pQp4Bgu0a1mr5uDZ196+t8lIVIfWQSPWmP+Jv
 # Golang's sum DB:
