@@ -7,7 +7,7 @@
 | [Armory Drive Prod 2](./50dfc1866b26a18b65834743645f90737c331bc5e99b44100e5ca555c17821e3) | armory-drive-log | 
 | [go.sum database tree](./3e9617dce5730053cb82f0481b9d289cd3c384a9219ef5509c91aa60d214794e) | sum.golang.org | 
 | [Rekor](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
-| [DEFAULT](./d0a1f19e973cd5cc3d4f26446ea418d33faefffb43ea1e3eadfe133287f71ff8) | Pixel-Transparency-Log-2021 | 
+| [DEFAULT](./542f1d5cf18cac38a8921be403c6b620eae2c06d5f0d15a050cfe98e8202d02d) | pixel6_transparency_log | 
  
 
 ## Known Witnesses
