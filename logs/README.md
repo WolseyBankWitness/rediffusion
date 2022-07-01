@@ -8,6 +8,7 @@
 | [go.sum database tree](./3e9617dce5730053cb82f0481b9d289cd3c384a9219ef5509c91aa60d214794e) | sum.golang.org | 
 | [Rekor](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
 | [DEFAULT](./542f1d5cf18cac38a8921be403c6b620eae2c06d5f0d15a050cfe98e8202d02d) | pixel6_transparency_log | 
+| [lvfs](./74ea854e2a0cdf00544673d488ef95955b56cdcaa23ec382e437b89a20985bd4) | lvfs | 
  
 
 ## Known Witnesses
