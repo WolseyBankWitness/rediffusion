@@ -6,7 +6,8 @@
 | [github.com/AlCutter/serverless-test/log](./48e2ecbc0474292d790906a13023a76a93e0f3706f86f9f939bd91b7dcfde4a6) | github.com/AlCutter/serverless-test/log | 
 | [Armory Drive Prod 2](./50dfc1866b26a18b65834743645f90737c331bc5e99b44100e5ca555c17821e3) | armory-drive-log | 
 | [go.sum database tree](./3e9617dce5730053cb82f0481b9d289cd3c384a9219ef5509c91aa60d214794e) | sum.golang.org | 
-| [Rekor](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
+| [rekor.sigstore.dev - 3904496407287907110](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
+| [rekor.sigstore.dev - 2605736670972794746](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
 | [DEFAULT](./12d4b0d15f0f3e9470d2ebb99970d0e183a33e359e1ecfc25d248f230902787a) | pixel_transparency_log | 
 | [lvfs](./74ea854e2a0cdf00544673d488ef95955b56cdcaa23ec382e437b89a20985bd4) | lvfs | 
  
