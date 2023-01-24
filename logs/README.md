@@ -3,13 +3,13 @@
 ## Known Logs
 | Origin | SignedBy |
 |--------|----------|
-| [github.com/AlCutter/serverless-test/log](./48e2ecbc0474292d790906a13023a76a93e0f3706f86f9f939bd91b7dcfde4a6) | github.com/AlCutter/serverless-test/log | 
-| [Armory Drive Prod 2](./50dfc1866b26a18b65834743645f90737c331bc5e99b44100e5ca555c17821e3) | armory-drive-log | 
-| [go.sum database tree](./3e9617dce5730053cb82f0481b9d289cd3c384a9219ef5509c91aa60d214794e) | sum.golang.org | 
-| [rekor.sigstore.dev - 3904496407287907110](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
-| [rekor.sigstore.dev - 2605736670972794746](./e09045bedf247c449acf3fe26375fb5a1b81110546e797d520cb1133f27fbd1a) | rekor.sigstore.dev | 
-| [DEFAULT](./12d4b0d15f0f3e9470d2ebb99970d0e183a33e359e1ecfc25d248f230902787a) | pixel_transparency_log | 
-| [lvfs](./74ea854e2a0cdf00544673d488ef95955b56cdcaa23ec382e437b89a20985bd4) | lvfs | 
+| [github.com/AlCutter/serverless-test/log](./5ecefef59f71c31d0aa3eb20e47b11916d20d655863ec2b1c8de5278dbdedfa0) | github.com/AlCutter/serverless-test/log | 
+| [Armory Drive Prod 2](./a49f0a631f86d3e4fc6726e4389d1cc1998731aa58be95e3e81026d35d2b2902) | armory-drive-log | 
+| [go.sum database tree](./bdc0d5078d38fc2b9491df373eb7c0d3365bfe661c83edc89112fd38719dc3a0) | sum.golang.org | 
+| [rekor.sigstore.dev - 3904496407287907110](./9b2bc13a3839d8a954832caa002ce8d7fb3d0bf7f4ce4a310a7dbbf28de101a8) | rekor.sigstore.dev | 
+| [rekor.sigstore.dev - 2605736670972794746](./50ed07082843287df5342353a4084563e6eaeb7bbaaa961d45400dde004c1186) | rekor.sigstore.dev | 
+| [DEFAULT](./2c24315310cd31babda8707be0c14191a2473dfc6184b6d1e446599c66daab74) | pixel_transparency_log | 
+| [lvfs](./622d9da7b4cd227713b204d4bf1d46bc94486b6ddc06ed3a2c13a21cd7718885) | lvfs | 
  
 
 ## Known Witnesses
