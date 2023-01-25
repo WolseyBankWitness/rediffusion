@@ -27,7 +27,7 @@ jobs:
             let matchArtifact = artifacts.data.artifacts.filter((artifact) => {
               return artifact.name == "pr_metadata"
             })[0];
-            if matchArtifact == null {
+            if (matchArtifact == null) {
               core.notice("No PR metadata found.");
               return;
             }
