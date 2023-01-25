@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Combine witness signatures
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     # Attempt to combine witness signatures with the log checkpoint.
     - name: Combine witness signatures
       id: combine_witness_signatures
