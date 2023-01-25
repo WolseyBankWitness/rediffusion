@@ -58,7 +58,7 @@ jobs:
           D=$(mktemp -d)/pr_metadata
           mkdir -p ${D}
           echo ${{ github.event.number }} > ${D}/NR
-          echo "::set-output name=metadata_dir::${D}"
+          echo "metadata_dir=${D}" >> $GITHUB_OUTPUT
       - uses: actions/upload-artifact@v3
         with:
           name: pr_metadata
