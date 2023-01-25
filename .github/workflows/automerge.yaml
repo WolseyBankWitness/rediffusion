@@ -28,8 +28,8 @@ jobs:
               return artifact.name == "pr_metadata"
             })[0];
             if matchArtifact == null {
-              core.notice("No PR metadata found.")
-              return
+              core.notice("No PR metadata found.");
+              return;
             }
             let download = await github.rest.actions.downloadArtifact({
                owner: context.repo.owner,
