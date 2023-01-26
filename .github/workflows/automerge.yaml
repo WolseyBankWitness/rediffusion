@@ -49,5 +49,6 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_METHOD: rebase
+          MERGE_LABELS: ""
           MERGE_DELETE_BRANCH: true
           PULL_REQUEST: ${{ steps.pr_metadata.outputs.pr }}
