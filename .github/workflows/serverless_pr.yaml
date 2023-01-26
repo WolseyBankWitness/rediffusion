@@ -32,7 +32,6 @@ jobs:
             echo "::error file=${i}::Modified protected distributor structure"
           done
           exit 1
-
 # Run this job only when we've detected a distributor checkpoint PR
   distributor_validator:
     needs: changes
@@ -42,7 +41,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0
           ref: "refs/pull/${{ github.event.number }}/merge"
       - name: Combine witness signatures (dry run)
         id: combine_witness_signatures_dry_run
@@ -51,10 +49,15 @@ jobs:
             distributor_dir: '${{ env.DISTRIBUTOR_ROOT }}'
             config: '${{ env.DISTRIBUTOR_ROOT }}config.yaml'
             dry_run: true
-      - name: automerge
-        uses: "pascalgn/automerge-action@v0.15.5"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_METHOD: rebase
-          MERGE_LABELS: ""
-          MERGE_DELETE_BRANCH: true
+      # Store PR number so we can update from a more priviledged workflow.
+      - id: save_metadata
+        name: Save PR number
+        run: |
+          D=$(mktemp -d)/pr_metadata
+          mkdir -p ${D}
+          echo ${{ github.event.number }} > ${D}/NR
+          echo "metadata_dir=${D}" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v3
+        with:
+          name: pr_metadata
+          path: ${{ steps.save_metadata.outputs.metadata_dir }}
