@@ -8,7 +8,7 @@
 | [go.sum database tree](./bdc0d5078d38fc2b9491df373eb7c0d3365bfe661c83edc89112fd38719dc3a0) | sum.golang.org | 
 | [rekor.sigstore.dev - 3904496407287907110](./9b2bc13a3839d8a954832caa002ce8d7fb3d0bf7f4ce4a310a7dbbf28de101a8) | rekor.sigstore.dev | 
 | [rekor.sigstore.dev - 2605736670972794746](./50ed07082843287df5342353a4084563e6eaeb7bbaaa961d45400dde004c1186) | rekor.sigstore.dev | 
-| [DEFAULT](./2c24315310cd31babda8707be0c14191a2473dfc6184b6d1e446599c66daab74) | pixel_transparency_log | 
+| [developers.google.com/android/binary_transparency/0](./adea9455f27607a6bdb26cbf395bceb9a2b1db7893b364facaf7012a27522837) | pixel_transparency_log | 
 | [lvfs](./622d9da7b4cd227713b204d4bf1d46bc94486b6ddc06ed3a2c13a21cd7718885) | lvfs | 
  
 
@@ -22,6 +22,7 @@
 | mhutchinson.witness | 
 | JKU-INS | 
 | ydTest | 
+| ArmoredWitness-twilight-pine | 
 
 
 
